@@ -13,7 +13,7 @@ Docker image which offers a Golang development environment with Visual Studio Co
 
 ```bash
 docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix \
-                    -v sources_folder:/go/src
+                    -v sources_folder:/go/src \
                     vvinch/go-ide
 ```
 
