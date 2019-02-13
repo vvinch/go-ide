@@ -2,11 +2,12 @@
 
 ## Description
 
-Docker image which offers a Golang development environment with Visual Studio Code IDE.
+Go development environment with Visual Studio Code IDE.
 
-## Installed toolset
+The following software is installed:
 
 - Go environment (latest)
+- Git
 - Visual Studio Code with Go extension
 
 ## Usage
@@ -32,3 +33,7 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix \
 - DISPLAY=:0.0
 
    This environment variable is defined by default.
+
+- VS_OPTIONS
+
+   Additionnal command line parameters for Visual Studio Code (eg: ```--ignore-certificate-errors```)

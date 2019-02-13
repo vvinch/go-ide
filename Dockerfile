@@ -42,5 +42,6 @@ RUN go get -u -v github.com/ramya-rao-a/go-outline && \
 
 # Environment variables
 ENV DISPLAY=:0.0
+ENV VS_OPTIONS=""
 
-CMD [ "code", "--verbose", "--disable-gpu", "-n", "." ]
+CMD [ "/bin/bash", "-c",  "code ${VS_OPTIONS} --verbose --disable-gpu -n ." ]
